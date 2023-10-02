@@ -18,7 +18,7 @@ const SignUpScreen = () => {
           <Text style={styles.buttonText}>Sign Up with Facebook</Text>
         </TouchableOpacity>
         <TouchableOpacity>
-          <Text style={styles.loginText}>Already have an account? <Text style={styles.underline}>Login</Text></Text>
+          <Text style={styles.loginText}>Already have an account? Login</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>;
@@ -34,11 +34,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     paddingHorizontal: 20
   },
-  title: {
-    fontSize: 24,
-    fontWeight: "bold",
-    marginBottom: 20
-  },
+  title: {},
   input: {
     width: "100%",
     height: 50,
@@ -75,12 +71,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginBottom: 10
   },
-  loginText: {
-    color: "blue",
-    fontSize: 18
-  },
-  underline: {
-    textDecorationLine: 'underline'
-  }
+  loginText: {}
 });
 export default SignUpScreen;
