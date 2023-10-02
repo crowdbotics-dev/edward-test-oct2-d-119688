@@ -3,24 +3,24 @@ import React from 'react';
 import { SafeAreaView, View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
 
 const SignUpScreen = () => {
-  return <SafeAreaView style={_styles.RnZWVVHC}>
-      <View style={_styles.WPDYjgbp}>
+  return <SafeAreaView style={_styles.cgDXzeEm}>
+      <View style={_styles.RnhAZNmn}>
         <Image source={{
         uri: 'https://tinyurl.com/42evm3m3'
-      }} style={_styles.bWTiwnsz} />
-        <TextInput placeholder="Email" style={_styles.esVGRlWt} />
-        <TextInput placeholder="Password" secureTextEntry={true} style={_styles.jEJLTnrF} />
-        <TouchableOpacity style={_styles.iecHVpCS}>
-          <Text style={_styles.EKTtMLhM}>Sign Up with Email</Text>
+      }} style={_styles.uVBciVZY} />
+        <TextInput placeholder="Email" style={_styles.ZsLYOdMg} />
+        <TextInput placeholder="Password" secureTextEntry={true} style={_styles.wfijNcKN} />
+        <TouchableOpacity style={_styles.IlVkDJks}>
+          <Text style={_styles.ahrBLNsN}>Sign Up with Email</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={_styles.NdfjinFw}>
-          <Text style={_styles.MScIoNdV}>Sign Up with Google</Text>
+        <TouchableOpacity style={_styles.JHzlngxw}>
+          <Text style={_styles.eKOLBqVR}>Sign Up with Google</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={_styles.JQSUiRPi}>
-          <Text style={_styles.tssCEWup}>Sign Up with Facebook</Text>
+        <TouchableOpacity style={_styles.OVqLLeIF}>
+          <Text style={_styles.WQMigZPb}>Sign Up with Facebook</Text>
         </TouchableOpacity>
         <TouchableOpacity>
-          <Text style={_styles.cViiGvgw}>Already have an account? Login</Text>
+          <Text style={_styles.kaeHbSCI}>Already have an account? Login</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>;
@@ -29,20 +29,20 @@ const SignUpScreen = () => {
 export default SignUpScreen;
 
 const _styles = StyleSheet.create({
-  RnZWVVHC: {
+  cgDXzeEm: {
     flex: 1
   },
-  WPDYjgbp: {
+  RnhAZNmn: {
     flex: 1,
     alignItems: "center",
     justifyContent: "center"
   },
-  bWTiwnsz: {
+  uVBciVZY: {
     width: 150,
     height: 150,
     marginBottom: 20
   },
-  esVGRlWt: {
+  ZsLYOdMg: {
     width: "80%",
     height: 50,
     borderWidth: 1,
@@ -51,7 +51,7 @@ const _styles = StyleSheet.create({
     padding: 10,
     marginBottom: 20
   },
-  jEJLTnrF: {
+  wfijNcKN: {
     width: "80%",
     height: 50,
     borderWidth: 1,
@@ -60,7 +60,7 @@ const _styles = StyleSheet.create({
     padding: 10,
     marginBottom: 20
   },
-  iecHVpCS: {
+  IlVkDJks: {
     width: "80%",
     height: 50,
     backgroundColor: "blue",
@@ -69,11 +69,11 @@ const _styles = StyleSheet.create({
     justifyContent: "center",
     marginBottom: 20
   },
-  EKTtMLhM: {
+  ahrBLNsN: {
     color: "white",
     fontSize: 18
   },
-  NdfjinFw: {
+  JHzlngxw: {
     width: "80%",
     height: 50,
     backgroundColor: "red",
@@ -82,11 +82,11 @@ const _styles = StyleSheet.create({
     justifyContent: "center",
     marginBottom: 20
   },
-  MScIoNdV: {
+  eKOLBqVR: {
     color: "white",
     fontSize: 18
   },
-  JQSUiRPi: {
+  OVqLLeIF: {
     width: "80%",
     height: 50,
     backgroundColor: "gray",
@@ -95,11 +95,11 @@ const _styles = StyleSheet.create({
     justifyContent: "center",
     marginBottom: 20
   },
-  tssCEWup: {
+  WQMigZPb: {
     color: "white",
     fontSize: 18
   },
-  cViiGvgw: {
+  kaeHbSCI: {
     color: "blue",
     fontSize: 18
   }
