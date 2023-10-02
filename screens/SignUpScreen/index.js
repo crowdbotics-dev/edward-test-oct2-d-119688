@@ -1,67 +1,58 @@
-import { StyleSheet } from "react-native";
-import React from 'react';
-import { SafeAreaView, View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
+import React from "react";
+import { SafeAreaView, View, Text, TextInput, TouchableOpacity, StyleSheet } from "react-native";
 
 const SignUpScreen = () => {
-  return <SafeAreaView style={_styles.cgDXzeEm}>
-      <View style={_styles.RnhAZNmn}>
-        <Image source={{
-        uri: 'https://tinyurl.com/42evm3m3'
-      }} style={_styles.uVBciVZY} />
-        <TextInput placeholder="Email" style={_styles.ZsLYOdMg} />
-        <TextInput placeholder="Password" secureTextEntry={true} style={_styles.wfijNcKN} />
-        <TouchableOpacity style={_styles.IlVkDJks}>
-          <Text style={_styles.ahrBLNsN}>Sign Up with Email</Text>
+  return <SafeAreaView style={styles.container}>
+      <View style={styles.content}>
+        <Text style={styles.title}>Create an account</Text>
+        <TextInput placeholder="Email" style={styles.input} />
+        <TextInput placeholder="Password" secureTextEntry={true} style={[styles.input, styles.passwordInput]} />
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttonText}>Sign Up with Email</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={_styles.JHzlngxw}>
-          <Text style={_styles.eKOLBqVR}>Sign Up with Google</Text>
+        <Text style={styles.or}>or</Text>
+        <TouchableOpacity style={[styles.button, styles.googleButton]}>
+          <Text style={styles.buttonText}>Sign Up with Google</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={_styles.OVqLLeIF}>
-          <Text style={_styles.WQMigZPb}>Sign Up with Facebook</Text>
+        <TouchableOpacity style={[styles.button, styles.facebookButton]}>
+          <Text style={styles.buttonText}>Sign Up with Facebook</Text>
         </TouchableOpacity>
         <TouchableOpacity>
-          <Text style={_styles.kaeHbSCI}>Already have an account? Login</Text>
+          <Text style={styles.loginText}>Already have an account? <Text style={styles.underline}>Login</Text></Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>;
 };
 
-export default SignUpScreen;
-
-const _styles = StyleSheet.create({
-  cgDXzeEm: {
+const styles = StyleSheet.create({
+  container: {
     flex: 1
   },
-  RnhAZNmn: {
+  content: {
     flex: 1,
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    paddingHorizontal: 20
   },
-  uVBciVZY: {
-    width: 150,
-    height: 150,
+  title: {
+    fontSize: 24,
+    fontWeight: "bold",
     marginBottom: 20
   },
-  ZsLYOdMg: {
-    width: "80%",
+  input: {
+    width: "100%",
     height: 50,
     borderWidth: 1,
     borderColor: "gray",
     borderRadius: 10,
     padding: 10,
+    marginBottom: 10
+  },
+  passwordInput: {
     marginBottom: 20
   },
-  wfijNcKN: {
-    width: "80%",
-    height: 50,
-    borderWidth: 1,
-    borderColor: "gray",
-    borderRadius: 10,
-    padding: 10,
-    marginBottom: 20
-  },
-  IlVkDJks: {
-    width: "80%",
+  button: {
+    width: "100%",
     height: 50,
     backgroundColor: "blue",
     borderRadius: 10,
@@ -69,38 +60,27 @@ const _styles = StyleSheet.create({
     justifyContent: "center",
     marginBottom: 20
   },
-  ahrBLNsN: {
+  buttonText: {
     color: "white",
     fontSize: 18
   },
-  JHzlngxw: {
-    width: "80%",
-    height: 50,
-    backgroundColor: "red",
-    borderRadius: 10,
-    alignItems: "center",
-    justifyContent: "center",
-    marginBottom: 20
+  googleButton: {
+    backgroundColor: "#87CEFA"
   },
-  eKOLBqVR: {
-    color: "white",
-    fontSize: 18
+  facebookButton: {
+    backgroundColor: "#87CEFA"
   },
-  OVqLLeIF: {
-    width: "80%",
-    height: 50,
-    backgroundColor: "gray",
-    borderRadius: 10,
-    alignItems: "center",
-    justifyContent: "center",
-    marginBottom: 20
+  or: {
+    fontSize: 18,
+    fontWeight: "bold",
+    marginBottom: 10
   },
-  WQMigZPb: {
-    color: "white",
-    fontSize: 18
-  },
-  kaeHbSCI: {
+  loginText: {
     color: "blue",
     fontSize: 18
+  },
+  underline: {
+    textDecorationLine: 'underline'
   }
 });
+export default SignUpScreen;
